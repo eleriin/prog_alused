@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 rl.question('Sisestage ainepunktid arv: ', punktid => {
     rl.question('Sisestage n2dalate arv:',n2dalad=>{
         let tulemus = (punktid*26/n2dalad)
-        console.log(Math.ceil (tulemus))
+        console.log(Math.round (tulemus))
         rl.close()
     })})
 
