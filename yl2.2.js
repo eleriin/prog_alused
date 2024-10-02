@@ -4,8 +4,15 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 rl.question("Sisestage Leedu perenimi: ", nimi=>{
-    console.log(nimi.slice(-2))
-    console.log(nimi.slice(-1))
+    if (nimi.slice(-2)== "ne"){
+        console.log('On abielus')
+    } else if (nimi.slice(-2)== "te"){
+        console.log('Vallaline')
+    } else if (nimi.slice(-1)== 'e'){
+        console.log('M22ramata')
+    } else{
+        console.log('Pole leedulanma perenimi.')
+    }
     rl.close()
 })
 
