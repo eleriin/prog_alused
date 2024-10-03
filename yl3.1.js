@@ -5,8 +5,11 @@ const rl = readline.createInterface({
 });
 
 rl.question('Sisestage mitu korda 2ratada: ', aratus => {
-for(let  i= 1; i <= aratus; i++){
-    console.log('T6use ja s2ra!');}
+let i=1
+while (i<=aratus){
+    console.log('T6use ja s2ra!')
+i++
+}
     rl.close()
 })
 
